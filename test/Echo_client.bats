@@ -3,7 +3,7 @@
 setup() {
   BATS_TMPDIR=`mktemp --directory`
   cd test/sampleBin
-  java echoserver.EchoServer &
+  java echoserver.EchoServer & sleep 1
   cd ../..
 }
 

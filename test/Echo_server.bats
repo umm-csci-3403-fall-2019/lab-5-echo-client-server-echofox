@@ -29,7 +29,7 @@ teardown() {
   cd src
   rm -f echoserver/*.class
   javac echoserver/EchoServer.java
-  java echoserver.EchoServer &
+  java echoserver.EchoServer & sleep 1
   cd ..
 
   cd test/sampleBin
